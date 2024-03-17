@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+    }
+    h1{
+        display: flex;
+        justify-content: center;
+    }
+    /* Basic styling for the form */
+    form {
+        width: 50%;
+        margin: 20px auto;
+    }
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }
+    input[type="text"], input[type="password"],input[type="email"], textarea {
+        width:100%;
+        padding: 7px;
+        margin-bottom: 10px;
+    }
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+    .container {
+        width: 40%;
+        margin: 0 auto;
+        border: 1px solid black ;
+    }
+    p{
+        display: flex;
+        justify-content: center;
+        
+    }
+    </style>
+</head>
+<body>
+    
+<div class="container">
+    <h1>Sign up</h1>
+    <form action="/signup" method="POST">
+ 
+           
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+             <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <input type="submit" value="Sign Up">
+            <p>Already have an account? <a href="/login">Login Here</a></p>
+          
+    </form>
+  
+</div>
+</body>
+</html>
